@@ -11,9 +11,9 @@ public class Aula02TiposPrimitivos {
         short idadeShort = 32000;
         boolean verdadeiro = true;
         boolean falso = false;
-        char caractere = '\u0041'; /**
-         * Traduz o decimal para tabela ASCII
-         */
+        char caractere = '\u0041'; /** Traduz o decimal para tabela ASCII */
+        String nome = "Goku";
+        // var nome2 = "Vegeta"; Esse tipo de notação só vai ser utilizado a partir da versão 10 do java, e no momento estou treinando versão 8
 
 
         System.out.println("Idade: " + age + " anos.");
@@ -21,5 +21,7 @@ public class Aula02TiposPrimitivos {
         System.out.println("CHAR: " + caractere);
         System.out.println("Age: type cast: " + age);
         System.out.println("Número grande: " + numeroGrande);
+        System.out.println("Oi meu nome é " + nome);
+
     }
 }
