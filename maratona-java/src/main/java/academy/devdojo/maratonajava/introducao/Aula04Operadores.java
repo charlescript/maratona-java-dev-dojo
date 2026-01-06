@@ -78,5 +78,7 @@ public class Aula04Operadores {
     --contador;
     int contador2 = 0;
     System.out.println(++contador2);
+
+
   }
 }
