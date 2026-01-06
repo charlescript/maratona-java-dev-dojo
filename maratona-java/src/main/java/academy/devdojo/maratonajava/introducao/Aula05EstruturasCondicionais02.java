@@ -4,7 +4,6 @@ import javax.swing.*;
 
 public class Aula05EstruturasCondicionais02 {
 
-
     public static void main(String[] args){
       // idade < 15 categoria infatil
       // idade >= 15 && idade < 18 juvenil
@@ -12,13 +11,15 @@ public class Aula05EstruturasCondicionais02 {
       int idade = 20;
       String categoria = "";
 
-      if(idade < 15) {
-          categoria = "Categoria Infantil";
-      } else if(idade >= 15 && idade < 18){
-          categoria = "Categoria Juvenil";
-      } else {
-          categoria = "Categoria Adulto";
-      }
+//      if(idade < 15) {
+//          categoria = "Categoria Infantil";
+//      } else if(idade >= 15 && idade < 18){
+//          categoria = "Categoria Juvenil";
+//      } else {
+//          categoria = "Categoria Adulto";
+//      }
+
+      categoria = (idade < 15) ? "Categoria Infantil" : (idade >= 15 && idade < 18) ? "Categoria Junenil" : "Categoria Adulto";
 
       System.out.println(categoria);
     }
