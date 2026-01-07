@@ -9,7 +9,7 @@ public class Aula05EstruturasCondicionais06 {
     int dia = 8;
 
     if(dia < 1 || dia > 7){
-      System.out.println("Valor  selecionado deve ser de 1 a 7.");
+      System.out.println("Valor inserido deve ser de 1 a 7.");
       System.exit(0);
     }
 
