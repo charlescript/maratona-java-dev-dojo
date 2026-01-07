@@ -23,8 +23,8 @@ public class Aula06EstruturasDeRepeticao01 {
 
     System.out.println("-------------------------------");
 
-    for(int i = 0; i <= 10; i++) {
-        System.out.println("FOR: " + i);
+    for(count = 0; count <= 10; count++) {
+        System.out.println("FOR: " + count);
     }
 
   }
