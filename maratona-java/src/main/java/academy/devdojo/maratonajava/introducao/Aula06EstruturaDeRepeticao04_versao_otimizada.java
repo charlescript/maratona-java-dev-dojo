@@ -12,7 +12,8 @@ public class Aula06EstruturaDeRepeticao04_versao_otimizada {
           if (valorParcela < 1000) {
             break;
           }
-          System.out.println("Parcelar em " + parcela + "x -> R$ " + valorParcela);
+          //System.out.println("Parcelar em " + parcela + "x -> R$ " + valorParcela);
+          System.out.printf("Parcelado em %d vezes -> R$ %.2f%n", parcela, valorParcela);
       }
   }
 }
