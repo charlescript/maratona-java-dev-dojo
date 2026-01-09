@@ -14,6 +14,5 @@ public class Aula07Array03 {
               System.out.println("Foreach " + num);
           }
 
-
       }
 }
