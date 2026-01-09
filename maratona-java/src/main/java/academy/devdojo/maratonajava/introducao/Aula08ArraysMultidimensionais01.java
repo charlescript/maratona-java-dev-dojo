@@ -17,15 +17,25 @@ public class Aula08ArraysMultidimensionais01 {
           dias[2][1] = 30;
           dias[2][2] = 31;
 
-          /**
+
           for(int i = 0; i < dias.length; i++){
             System.out.println(dias[i]);   // Imprime os endereços de memória referinciando os vetores
           }
-          */
+
+          System.out.println("######################################");
 
           for(int i = 0; i < dias.length; i++) {
-            for (int j = 0; j < dias.length; j++) {
+            for (int j = 0; j < dias[i].length; j++) {
               System.out.println(dias[i][j]);
+            }
+          }
+
+          System.out.println("######################################");
+          System.out.println("######################################");
+
+          for(int[] arrBase: dias){  // Foreach fazendo referência aos endereços de memória de cada vetor
+            for(int num : arrBase){   // For iterando arrBase e suas sub-posições
+              System.out.println(num);
             }
           }
 
