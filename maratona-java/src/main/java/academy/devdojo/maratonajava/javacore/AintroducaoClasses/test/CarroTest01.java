@@ -21,6 +21,9 @@ public class CarroTest01 {
         carro2.setModelo("812 Superfast");
         carro2.setAno(2023);
 
+        carro2 = carro1;
+
+
         System.out.println("Carro1: \nNome: " + carro1.getNome() +
                             "\nModelo: " + carro1.getModelo() +
                             "\nAno: " + carro1.getAno()
