@@ -12,6 +12,12 @@ public class CalculadoraTest03 {
 
         int result2 = (int) calculadora.divideDoisNumeros(20, 2);  // Casting forçando o retorno Double em Int
         System.out.println("Int com Casting -> " + result2);
+
+        System.out.println(calculadora.divideDoisNumeros2(20,0));
+
+        System.out.println("---------------------");
+        calculadora.imprimeDivisaoDeDoisNumeros(86,5);
+
     }
 
 }
