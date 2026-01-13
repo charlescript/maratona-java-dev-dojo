@@ -4,12 +4,42 @@ import java.text.NumberFormat;
 import java.util.Locale;
 
 public class Funcionario {
-  public String nome;
-  public int idade;
-  public double[] salarios;
+  private String nome;
+  private int idade;
+  private double[] salarios;
+  private double media;
 
   Locale localeBR = new Locale("pt", "BR");
   NumberFormat dinheiro = NumberFormat.getCurrencyInstance(localeBR);
+
+  public String getNome(){
+    return nome;
+  }
+
+  public void setNome(String nome){
+    this.nome = nome;
+  }
+
+  public int getIdade() {
+    return idade;
+  }
+
+  public void setIdade(int idade) {
+    this.idade = idade;
+  }
+
+  public double[] getSalarios(){
+    return this.salarios;
+  }
+
+  public void setSalarios(double[] salarios){
+    this.salarios = salarios;
+  }
+
+  public double getMedia(){
+    return media;
+  }
+
 
   public void imprime(){
     System.out.println("---------------Employees------------------------");
@@ -21,7 +51,7 @@ public class Funcionario {
       }
 
       System.out.print("Salários: ");
-      for (double salario : salarios) {
+      for (double salario : salarios) { //foreach para cada giro
         System.out.print(dinheiro.format(salario) + " | ");
       }
       imprimeMediaSalario();
@@ -35,8 +65,8 @@ public class Funcionario {
       for(double salary: salarios){
         soma += salary;
       }
-      double mediaSalarial = soma / salarios.length;
-      System.out.println("\nMédia dos "+salarios.length + " salários: " + dinheiro.format(mediaSalarial));
+      this.media = (soma / salarios.length);
+      System.out.println("\nMédia dos "+salarios.length + " salários: " + dinheiro.format(media));
   }
 
 }
