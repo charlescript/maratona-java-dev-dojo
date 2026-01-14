@@ -1,10 +1,21 @@
-package academy.devdojo.maratonajava.javacore.CsobrecargaMetodos.dominio;
+package academy.devdojo.maratonajava.javacore.Dconstrutores.dominio;
 
 public class Anime {
   private String nome;
   private String tipo;
   private int episodios;
   private String genero;
+
+  public Anime(String nome, String tipo, int episodios, String genero){
+    this.nome = nome;
+    this.tipo = tipo;
+    this.episodios = episodios;
+    this.genero = genero;
+  }
+
+  public Anime() {
+
+  }
 
   public void init(String nome, String tipo, int episodios){
       this.nome = nome;
@@ -23,6 +34,7 @@ public class Anime {
     System.out.println("Tipo: " + this.tipo);
     System.out.println("Episódio: " + this.episodios);
     System.out.println("Genero: " + this.genero);
+    System.out.println("-----------------------------");
   }
 
   public void setNome(String nome){
