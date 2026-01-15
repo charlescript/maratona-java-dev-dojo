@@ -5,16 +5,23 @@ public class Anime {
   private String tipo;
   private int episodios;
   private String genero;
+  private String estudio;
 
   public Anime(String nome, String tipo, int episodios, String genero){
+    this();  // Referenciando um construtor vazio
     this.nome = nome;
     this.tipo = tipo;
     this.episodios = episodios;
     this.genero = genero;
   }
 
-  public Anime() {
+  public Anime(String nome, String tipo, int episodios, String genero, String estudio){  // Sobrecarga de construtor
+    this(nome, tipo, episodios, genero);   // Referenciando o 1º construtor pela estrutura de parametros passados
+    this.estudio = estudio;           // Acrescentando um atributo
+  }
 
+  public Anime() {
+    System.out.println("Dentro do construtor sem argumentos");
   }
 
   public void init(String nome, String tipo, int episodios){
@@ -34,6 +41,7 @@ public class Anime {
     System.out.println("Tipo: " + this.tipo);
     System.out.println("Episódio: " + this.episodios);
     System.out.println("Genero: " + this.genero);
+    System.out.println("Estudio: " + this.estudio);
     System.out.println("-----------------------------");
   }
 
