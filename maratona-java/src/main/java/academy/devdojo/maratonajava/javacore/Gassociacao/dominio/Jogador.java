@@ -23,14 +23,6 @@ public class Jogador {
        System.out.println("--------------------------------");
     }
 
-    public Time getTime(){
-      return time;
-    }
-
-    public void setTime(Time time){
-      this.time = time;
-    }
-
     public String getNome(){
         return nome;
     }
@@ -46,5 +38,13 @@ public class Jogador {
     public void setPosicao(){
       this.posicao = posicao;
     }
+
+    public Time getTime(){
+    return time;
+  }
+
+    public void setTime(Time time){
+    this.time = time;
+  }
 
 }
