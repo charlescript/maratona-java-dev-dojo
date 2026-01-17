@@ -20,7 +20,6 @@ public class Jogador {
         if(time != null) {
           System.out.println("Time: " + time.getNome());
         }
-
        System.out.println("--------------------------------");
     }
 
