@@ -11,10 +11,11 @@ public class JogadorTest03 {
 
         Jogador jogador3 = new Jogador("Cristiano Ronaldo", "Atacante");
         Jogador jogador4 = new Jogador("Pepe", "Zagueiro");
+        Jogador jogador5 = new Jogador("João Félix", "Meia" );
         Time time2 = new Time("Portugal");
 
         Jogador[] jogadoresBrasil = {jogador1, jogador2};
-        Jogador[] jogadoresPortugal = {jogador3, jogador4};
+        Jogador[] jogadoresPortugal = {jogador3, jogador4, jogador5};
 
         jogador1.setTime(time1);
         jogador2.setTime(time1);
@@ -22,6 +23,7 @@ public class JogadorTest03 {
 
         jogador3.setTime(time2);
         jogador4.setTime(time2);
+        jogador5.setTime(time2);
         time2.setJogador(jogadoresPortugal);
 
         System.out.println("----------Jogadores----------");
@@ -29,7 +31,7 @@ public class JogadorTest03 {
         jogador2.imprime();
         jogador3.imprime();
         jogador4.imprime();
-
+        jogador5.imprime();
         System.out.println("----------Times----------");
         time1.imprime();
         System.out.println("----------Times----------");
