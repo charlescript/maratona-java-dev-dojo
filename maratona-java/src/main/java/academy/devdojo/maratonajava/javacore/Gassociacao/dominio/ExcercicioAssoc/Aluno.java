@@ -1,9 +1,9 @@
 package academy.devdojo.maratonajava.javacore.Gassociacao.dominio.ExcercicioAssoc;
 
 public class Aluno {
-   String nome;
-   int idade;
-   Seminario seminario;
+   private String nome;
+   private int idade;
+   private Seminario seminario;
 
    public Aluno(String nome, int idade){
       this.nome = nome;

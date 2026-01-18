@@ -1,7 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Gassociacao.dominio.ExcercicioAssoc;
 
 public class Local {
-   String endereco;
+   private String endereco;
 
    public Local(String endereco){
       this.endereco = endereco;
