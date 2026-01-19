@@ -2,9 +2,15 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
 public class Funcionario extends Pessoa{
 
-    private double salario;
+  private double salario;
 
-    public double getSalario(){
+  @Override
+  public void imprime(){
+    super.imprime();
+    System.out.println("Salário: RS" + this.salario);
+  }
+
+  public double getSalario(){
       return salario;
     }
 
