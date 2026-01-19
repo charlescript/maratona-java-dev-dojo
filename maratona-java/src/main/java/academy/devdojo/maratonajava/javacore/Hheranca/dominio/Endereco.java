@@ -1,5 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 
+import academy.devdojo.maratonajava.javacore.Hheranca.dominio.Pessoa;
+
 public class Endereco {
     private String rua;
     private String cep;
@@ -9,6 +11,11 @@ public class Endereco {
         this.rua = rua;
         this.cep = cep;
     } */
+
+    public void imprime(){
+      Pessoa p = new Pessoa();
+      p.nome = "Teste";
+    }
 
     public String getRua(){
        return rua;
