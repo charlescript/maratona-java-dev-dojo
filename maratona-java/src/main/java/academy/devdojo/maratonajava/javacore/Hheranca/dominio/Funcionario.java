@@ -3,9 +3,20 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 public class Funcionario extends Pessoa{
 
   private double salario;
+  static {
+    System.out.println("Dentro do bloco estático de Funcionario.");
+  }
+  {
+    System.out.println("Dentro do bloco de inicializaçao de Funcionario 1");
+  }
+  {
+    System.out.println("Dentro do bloco de inicialização de Funcionario 2");
+  }
+
 
   public Funcionario (String nome){
     super(nome);
+    System.out.println("Dentro do construtor de funcionário");
   }
 
   public Funcionario(String nome, String cpf){
@@ -19,6 +30,7 @@ public class Funcionario extends Pessoa{
   public Funcionario(String nome, String cpf, Endereco endereco, double salario){
     this(nome, cpf, endereco);
     this.salario = salario;
+    System.out.println("Dentro do construtor de funcionário");
   }
 
   @Override
