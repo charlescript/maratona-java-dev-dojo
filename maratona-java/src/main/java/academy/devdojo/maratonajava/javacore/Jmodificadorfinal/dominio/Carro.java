@@ -2,11 +2,7 @@ package academy.devdojo.maratonajava.javacore.Jmodificadorfinal.dominio;
 
 public class Carro {
    private String nome;
-   public final double VELOCIDADE_LIMITE;
-
-   {
-     VELOCIDADE_LIMITE = 250;
-   }
+   public static final double VELOCIDADE_LIMITE = 250;
 
    public String getNome(){
      return nome;
