@@ -10,8 +10,8 @@ public class Desenvolvedor extends Funcionario {
 
   public String toString(){
     return "Desenvolvedor{ " +
-            "nome= " + '\'' +
-            "salario= " + '\'' +
+            "nome='" + nome + '\'' +
+            "salario='" + salario + '\'' +
             "}";
   }
 }
