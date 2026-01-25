@@ -18,4 +18,5 @@ public class Gerente extends Funcionario{
             ", salario=" + salario +
             '}';
   }
+
 }
