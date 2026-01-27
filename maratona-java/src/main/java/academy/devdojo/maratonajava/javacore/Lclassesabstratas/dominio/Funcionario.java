@@ -11,4 +11,9 @@ public abstract class Funcionario extends Pessoa {
     }
 
     public abstract void calculaBonus();
+
+    @Override
+    public void imprime(){
+      System.out.println("Imprimindo...");
+    }
 }
