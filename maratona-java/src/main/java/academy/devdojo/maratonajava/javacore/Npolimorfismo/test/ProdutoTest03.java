@@ -10,8 +10,12 @@ public class ProdutoTest03 {
   public static void main(String[] args){
     Produto produto = new Computador("AlienWare", 18000);
 
+
     Tomate tomate = new Tomate("Italiano", 3.20);
     tomate.setDataValidade("11/12/2026");
+
     CalculadoraImposto.calcularImposto(tomate);
+    System.out.println("-------------------------------------");
+    CalculadoraImposto.calcularImposto(produto);
   }
 }
